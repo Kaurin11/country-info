@@ -1,0 +1,28 @@
+.country-card {
+  width: 30rem;
+  //height: 40rem;
+  border-radius: 2px;
+  margin: 2.5rem 2rem;
+  background-color: $light-mode-elements;
+  cursor: pointer;
+
+  &__flag {
+    width: 100%;
+    height: 14rem;
+  }
+
+  &__content {
+    padding: 10px 20px;
+    margin-bottom: 3rem;
+
+    p {
+      margin-bottom: 5px;
+    }
+
+    &--name {
+      margin-bottom: 1.5rem;
+      font-size: $detail-page-font;
+      font-weight: 900;
+    }
+  }
+}

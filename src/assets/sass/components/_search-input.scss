@@ -1,0 +1,9 @@
+.search-input {
+  height: 3rem;
+  width: 70%;
+
+  @include responde(phone) {
+    margin-bottom: 5rem;
+    flex: 0 0 90%;
+  }
+}

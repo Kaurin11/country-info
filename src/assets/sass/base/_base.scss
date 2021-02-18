@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  // @include responde(phone) {
+  //   font-size: 50%;
+  // }
+
+  // @include responde(tab-port) {
+  //   font-size: 60%;
+  // }
+
+  // @include responde(tab-land) {
+  //   font-size: 70%;
+  // }
+
+  // @include responde(big-screen) {
+  //   font-size: 80%;
+  // }
+}
+
+body {
+  box-sizing: border-box;
+}

@@ -1,0 +1,19 @@
+.search {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 3rem 4.5rem;
+
+  &__dropdown {
+    @include responde(phone) {
+      margin-top: 2rem;
+    }
+  }
+
+  @include responde(phone) {
+    display: flex;
+    flex-direction: column;
+
+    margin: 2rem 1.5rem;
+  }
+}

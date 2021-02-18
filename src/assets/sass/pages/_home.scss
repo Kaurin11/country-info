@@ -1,0 +1,27 @@
+.countries {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+}
+
+.country-detail {
+  min-height: 90vh;
+  background-color: $light-mode-background;
+  position: relative;
+
+  &__btn {
+    position: absolute;
+    top: 3rem;
+    left: 15rem;
+
+    @include responde(tab-port) {
+      top: 2rem;
+      left: 8.5rem;
+    }
+
+    @include responde(phone) {
+      top: 1rem;
+      left: 6rem;
+    }
+  }
+}

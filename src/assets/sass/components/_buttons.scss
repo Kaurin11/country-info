@@ -1,0 +1,32 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.2rem 3rem;
+    border-radius: 2px;
+    transition: all 0.5s;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    background-color: $light-mode-elements;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.3rem 1rem rgba($color-black, 0.2);
+  }
+}

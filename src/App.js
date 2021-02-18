@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import './App.css';
+import { getCountryDetailRoute, mainViewRoute } from './constants/routes/routes';
+import CountryDetail from './view/countryDetail/countryDetail';
+import MainView from './view/mainView/mainView';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path={mainViewRoute()} component={MainView} />
+        <Route path={getCountryDetailRoute()} component={CountryDetail} />
+        <Redirect to={mainViewRoute()} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
